@@ -33,10 +33,10 @@ function App() {
                         <span className="post">{notification.post}</span>
                       ) : null}
                       {notification.groupName ? (
-                      <span className="groupName">
-                        {notification.groupName}
-                      </span>
-                    ) : null}
+                        <span className="groupName">
+                          {notification.groupName}
+                        </span>
+                      ) : null}
                     </p>
                     {/* <span className="username">{notification.username}</span> */}
                     {/* <span className="action">{notification.action}</span> */}

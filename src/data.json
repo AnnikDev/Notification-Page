@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "username": "Mark Webber",
+    "profilePic": "",
+    "action": "reacted to your recent post",
+    "post": "My first tournament today!",
+    "time": "1m ago",
+    "isRead": false
+  },
+  {
+    "id": 2,
+    "username": "Angela Gray",
+    "profilePic": "",
+    "action": "followed you",
+    "time": "5m ago",
+    "isRead": false
+  },
+  {
+    "id": 3,
+    "username": "Jacob Thompson",
+    "profilePic": "",
+    "action": "has joined your group",
+    "groupName": "Chess Club",
+    "time": "1 day ago",
+    "isRead": false
+  },
+  {
+    "id": 4,
+    "username": "Rizky Hasanuddin",
+    "profilePic": "",
+    "action": "sent you a private message",
+    "text": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    "time": " 5 days ago",
+    "isRead": true
+  },
+  {
+    "id": 5,
+    "username": "Kimberly Smith",
+    "profilePic": "",
+    "action": "commented on your picture",
+    "userPicture": "",
+    "time": "1 week ago",
+    "isRead": true
+  },
+  {
+    "id": 6,
+    "username": "Nathan Peterson",
+    "profilePic": "",
+    "action": "reacted to your recent post",
+    "post": "5 end-game strategies to increase your win rate",
+    "time": "2 weeks ago",
+    "isRead": true
+  },
+  {
+    "id": 7,
+    "username": "Anna Kim ",
+    "profilePic": "",
+    "action": "left the group",
+    "groupName": "Chess Club",
+    "time": "2 weeks ago",
+    "isRead": true
+  }
+]

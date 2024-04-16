@@ -1,0 +1,135 @@
+.notificationsContainer {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem 1.7rem 2rem;
+  width: 73rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0.2rem;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1c202b;
+}
+
+.notificationNum {
+  width: 3.2rem;
+  height: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  background-color: #0a327b;
+  color: #fff;
+  text-align: center;
+  border-radius: 20%;
+  padding-top: 0.3rem;
+  box-sizing: border-box;
+}
+
+header p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5e6778;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.notification {
+  display: flex;
+  justify-content: left;
+  gap: 1.9rem;
+  align-items: start;
+  width: 67rem;
+  padding: 1.8rem 2rem;
+}
+
+.profilePic,
+.userPic {
+  width: 4.5rem;
+}
+
+.fullDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.notificationDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60rem;
+}
+
+.notificationDetails span {
+  margin-right: 0.6rem;
+}
+
+.username {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1c202b;
+}
+
+.action {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5e6778;
+}
+
+.post {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #5e6778;
+}
+
+.groupName {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0a327b;
+}
+
+.time {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #939cad;
+  margin-top: 0.4rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 0.05rem solid #dde7ee;
+  padding: 1.7rem 2rem 2rem;
+  margin: 1.2rem 2rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5e6778;
+}
+
+.redDot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #f65552;
+  border-radius: 50%;
+}
+
+.userPic {
+  transform: translateX(-8rem);
+}

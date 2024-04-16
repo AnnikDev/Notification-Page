@@ -1,0 +1,14 @@
+html {
+  background-color: #f7fafd;
+  display: flex;
+  justify-content: center;
+  margin-top: 6.3rem;
+}
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}

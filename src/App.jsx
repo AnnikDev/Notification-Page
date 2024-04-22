@@ -5,20 +5,56 @@ import data from "./data.json";
 
 function App() {
   const [notifications, setNotifications] = useState(data);
+  const notificationCounter = notifications.filter(
+    (notification) => !notification.isRead
+  ).length;
   return (
     <>
       <div className="notificationsContainer">
         <header>
           <div className="headerTitle">
             <h2>Notifications </h2>
-            <span className="notificationNum">3</span>
+            <span className="notificationNum">{notificationCounter}</span>
           </div>
-          <p>Mark all as read</p>
+          <p
+            className="markAll"
+            onClick={() => {
+              const newMarked = notifications.map((currentMarked) => {
+                return {
+                  ...currentMarked,
+                  isRead: true,
+                };
+              });
+              setNotifications(newMarked);
+            }}
+          >
+            Mark all as read
+          </p>
         </header>
         <main>
           {notifications.map((notification) => {
             return (
-              <div key={notification.id} className="notification">
+              <div
+                key={notification.id}
+                className="notification"
+                style={
+                  !notification.isRead ? { backgroundColor: "#f7fafd" } : {}
+                }
+                onClick={() => {
+                  const newNotifications = notifications.map(
+                    (currentNotification) => {
+                      if (notification.id === currentNotification.id) {
+                        return {
+                          ...currentNotification,
+                          isRead: true,
+                        };
+                      }
+                      return currentNotification;
+                    }
+                  );
+                  setNotifications(newNotifications);
+                }}
+              >
                 <img
                   className="profilePic"
                   src={notification.profilePic}
@@ -38,16 +74,6 @@ function App() {
                         </span>
                       ) : null}
                     </p>
-                    {/* <span className="username">{notification.username}</span> */}
-                    {/* <span className="action">{notification.action}</span> */}
-                    {/* {notification.post ? (
-                      <span className="post">{notification.post}</span>
-                    ) : null} */}
-                    {/* {notification.groupName ? (
-                      <span className="groupName">
-                        {notification.groupName}
-                      </span>
-                    ) : null} */}
                     {!notification.isRead ? (
                       <div className="redDot"></div>
                     ) : null}

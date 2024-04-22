@@ -38,10 +38,11 @@ header h2 {
   box-sizing: border-box;
 }
 
-header p {
+.markAll {
   font-size: 1.6rem;
   font-weight: 500;
   color: #5e6778;
+  cursor: pointer;
 }
 
 main {
@@ -58,6 +59,7 @@ main {
   align-items: start;
   width: 67rem;
   padding: 1.8rem 2rem;
+  cursor: pointer;
 }
 
 .profilePic,
